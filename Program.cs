@@ -52,7 +52,7 @@ static string GetAgeMessage(int age)
     {
         return "You're a young learner. Have fun coding!";
     }
-    else if (age < 20)
+    else if (age < 27)
     {
         return "Great time to start your coding journey!";
     }
