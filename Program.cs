@@ -31,13 +31,32 @@ else
 
 if (string.IsNullOrWhiteSpace(name))
 {
-    name = "friend";
+    name = "guest";
 }
 
 Console.WriteLine(GetWelcomeMessage(name, age));
+Console.WriteLine(GetAgeMessage(age));
+Console.WriteLine("Thanks for visiting. Have a great day!");
 
 // Builds the welcome message for a user.
 static string GetWelcomeMessage(string name, int age)
 {
-    return $"Hello, {name}! Welcome aboard. You are {age} years old.";
+    return $"Hi there, {name}! Welcome to Nexus Academy. You are {age} years old.";
+}
+
+// Gives a short message based on the user's age.
+static string GetAgeMessage(int age)
+{
+    if (age < 13)
+    {
+        return "You're a young learner. Have fun coding!";
+    }
+    else if (age < 20)
+    {
+        return "Great time to start your coding journey!";
+    }
+    else
+    {
+        return "It's never too late to learn something new!";
+    }
 }
