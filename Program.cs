@@ -60,3 +60,6 @@ static string GetAgeMessage(int age)
         return "It's never too late to learn something new!";
     }
 }
+
+Console.WriteLine("Press any key to exit...");
+Console.ReadKey();
