@@ -1,6 +1,7 @@
 ﻿// A simple welcome app.
 // Run with arguments:   dotnet run -- Alice 25
 // Or run with no arguments and it will ask you for your name and age.
+// When it's done, press any key to close the app.
 
 string name;
 int age;
